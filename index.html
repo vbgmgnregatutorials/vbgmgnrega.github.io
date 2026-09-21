@@ -438,6 +438,19 @@
       font-weight: 600;
     }
 
+    /* Downloads */
+    .downloads-section{background:#f7faf8;border-top:1px solid #e3eee7;border-bottom:1px solid #e3eee7}
+    .download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}
+    .download-card{background:#fff;border:1px solid #dfe8e2;border-radius:16px;padding:22px;box-shadow:0 8px 24px rgba(20,70,40,.06);display:flex;flex-direction:column;min-height:220px}
+    .file-icon{width:48px;height:48px;border-radius:12px;background:#e8f5ed;color:#137333;display:grid;place-items:center;font-size:23px;margin-bottom:16px}
+    .file-type{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#137333;font-weight:800;margin-bottom:6px}
+    .download-card h3{margin:0 0 9px;font-size:19px;color:#17321f}
+    .download-card p{margin:0;color:#68756d;line-height:1.55;font-size:13px;flex:1}
+    .download-meta{font-size:11px;color:#8a948e;margin:14px 0 15px}
+    .download-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#137333;color:#fff;text-decoration:none;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
+    .download-btn:hover{background:#0d5b28}
+    @media(max-width:760px){.download-grid{grid-template-columns:1fr}}
+
     /* Contact */
     .contact {
       background: #ffffff;
@@ -583,6 +596,7 @@
       <nav aria-label="Main navigation">
         <a href="#products">Tools</a>
         <a href="#about">About</a>
+        <a href="#downloads">Downloads</a>
         <a href="#contact" class="nav-contact">Contact</a>
       </nav>
     </div>
@@ -689,6 +703,36 @@
       </div>
     </section>
 
+    <section id="downloads" class="downloads-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">DOWNLOADS</div>
+          <h2>Excel Files &amp; Templates</h2>
+          <p>Download useful Excel templates and tools for your day-to-day work.</p>
+        </div>
+
+        <div class="download-grid">
+          <article class="download-card">
+            <div class="file-icon">▣</div>
+            <div class="file-type">Excel Template · .xlsx</div>
+            <h3>Handsfree Work Demand Template</h3>
+            <p>Excel template for preparing Work Demand information for use with the AshadInfoTech workflow tools.</p>
+            <div class="download-meta">Handsfree_Work_Demand_Template.xlsx</div>
+            <a class="download-btn" href="downloads/Handsfree_Work_Demand_Template.xlsx" download>↓ Download Excel</a>
+          </article>
+
+          <article class="download-card">
+            <div class="file-icon">▣</div>
+            <div class="file-type">Excel Macro Workbook · .xlsm</div>
+            <h3>Automated VBA Formatting</h3>
+            <p>Macro-enabled Excel workbook for automated formatting and spreadsheet workflow assistance.</p>
+            <div class="download-meta">Automated_VBA_Formatting.xlsm</div>
+            <a class="download-btn" href="downloads/Automated_VBA_Formatting.xlsm" download>↓ Download Excel</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <div class="container about-grid">
 
@@ -771,6 +815,7 @@
         <a href="#home">Home</a>
         <a href="#products">Tools</a>
         <a href="#about">About</a>
+        <a href="#downloads">Downloads</a>
         <a href="#contact">Contact</a>
       </div>
 
